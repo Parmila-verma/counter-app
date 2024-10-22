@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>counter app</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 <style>
 
 </style>
+
 <body>
-<div class="container">
-    
-</div>
+    <div class="section">
+        <div class="container">
+            <div class="counter">
+            <h1 class=" heading">Counter app</h1>
+            <div class="card-body ">
+                <h1 class="zero">0</h1>
+                <button class="btn-increment">Add One</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <script>
+const mainTitle =document.querySelector('.zero');
+let curValue =0;
+const btnIncrement =document.querySelector('.btn-increment')
 
-
+btnIncrement.addEventListener('click',() =>{
+    curValue++;
+    mainTitle.textContent = curValue;
+});
     </script>
 </body>
+
 </html>
