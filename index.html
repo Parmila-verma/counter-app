@@ -15,16 +15,16 @@
     <div class="section">
         <div class="container">
             <div class="counter">
-            <h1 class=" heading">Counter app</h1>
-            <div class="card-body ">
-                <h1 class="zero">0</h1>
-                <button class="btn-increment">Add One</button>
+                <h1 class=" heading">Counter app</h1>
+                <div class="card-body ">
+                    <h1 class="zero">0</h1>
+                    <button class="btn-increment">Add One</button>
+                </div>
             </div>
         </div>
-        </div>
     </div>
-
-    <div class="section">
+<!-- advance counter -->
+     <div class="section">
         <div class="container">
             <h1 class=" heading"> Advance Counter app</h1>
             <div class="card-body-1 ">
@@ -34,19 +34,12 @@
                     <button class="save-btn">Save</button>
                 </div>
                 <h2 class="Previous-value">Previous values</h2>
+                <p class="para">null</p>
             </div>
         </div>
-    </div>
-    <script>
-const mainTitle =document.querySelector('.zero');
-let curValue =0;
-const btnIncrement =document.querySelector('.btn-increment')
-
-btnIncrement.addEventListener('click',() =>{
-    curValue++;
-    mainTitle.textContent = curValue;
-});
-    </script>
+    </div> 
+   
+    <script src="./Assets/js/app.js"></script>
 </body>
 
 </html>
