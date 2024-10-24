@@ -1,12 +1,13 @@
-const mainTitle = document.querySelector('.zero');
 let curValue = 0;
+const mainTitle = document.querySelector('.zero');
+
 const btnIncrement = document.querySelector('.btn-increment')
 
 btnIncrement.addEventListener('click', () => {
     curValue++;
     mainTitle.textContent = curValue;
 });
-
+ 
 // advance counter
 let initialValue = 0;
 let allValueArray = [];
@@ -22,14 +23,14 @@ addBtn.addEventListener('click', () => {
 }
 );
 saveBtn.addEventListener('click', () => {
-    // para.innerHTML = title.innerHTML;
-
     title.textContent = initialValue;
-
-    allValueArray.push(initialValue)
-    para.innerText = "" + allValueArray.join(',');
+    // if (initialValue < 1) {
+    //     return para.textContent = "null"
+    // }
+    initialValue > 0 && allValueArray.push(initialValue)
+    para.innerText = "" + allValueArray.join(', ');
     initialValue = 0;
-    title.textContent =initialValue
+    title.textContent = initialValue 
 });
 
 
